@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset=UTF-8>
+    <title>Casa Criativa</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    
+</head>
+
+<body>
+
+    <div id="container">
+
+        <section id="intro">
+
+            <header>
+                <a href="/">
+                    <img src="logo.png" alr="Imagem da Logomarca">
+                </a>
+                
+            </header>
+
+        <main>
+
+            <p>
+                Ficar em casa em períodos longos no deve ser nada facil.
+            </p>
+        
+            <p>
+                Por isso, iremos catalogar ideias, <strong>brincadeiras, jogos, filmes, 
+                livros, cursos, dicas</strong> e tudo o que for necessário para tornar 
+                esse momento mais interessante.
+            </p>
+        
+            <p>
+                Comece clicando em ver ideias para ver as 
+                ideias cadastradas e contribua adcionando a sia ideia
+            </p>
+
+        </main>
+
+        <section id="buttons">
+
+            <button onclick="onOff()">+ Adcionar Ideia</button>
+            <a href="/ideias" class="button">Ver Ideias</a>
+
+        </section>
+
+        <footer>
+            💻 Desenvolvido por IronDev 💻
+        </footer>
+
+        </section>
+
+        <section id="last-ideias">
+            
+            {% include "all_ideas.html" %}
+              
+        </section>
+    
+    </div>
+
+   <!-- Modal -->
+
+   {% include "modal.html" %}
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

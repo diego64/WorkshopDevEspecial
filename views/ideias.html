@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ideias Criativas</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body id="page-ideas">
+    
+    <div id="container">
+        <header>
+            <a href="/">
+                <img src="logo.png" alr="Imagem da Logomarca">
+            </a>
+             
+            <nav>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="#">Ideias</a></li>
+                <li><a class="button"href="#" onclick="onOff()">Nova Ideia</a></li>
+            </nav>
+        </header>
+    
+        <section id="title">
+            <p>em exibição</p> 
+            <h1>Ideias</h1>
+        </section>
+    
+        <main>
+            
+        <section id="ideas">
+            {% include "all_ideas.html" %}
+              
+        </section>
+        </main>
+    
+        <footer>
+            💻 Desenvolvido por IronDev 💻
+        </footer>
+    </div>
+
+   <!-- Modal -->
+
+{% include "modal.html" %}
+
+<script src="/scripts.js"></script>
+</body>
+</html>
